@@ -7,7 +7,9 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      # ZMK main revision available during the last successful original build.
+      # Pin it so later upstream changes cannot silently change this firmware.
+      revision: cb786cd7d69f2a41f2968c2e5dd6a269d417286b
       import: app/west.yml
   self:
     path: config
