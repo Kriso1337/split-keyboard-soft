@@ -25,4 +25,8 @@ include:
   - board: nice_nano
     shield: IO3_dongle
   - board: nice_nano
+    shield: IO3_dongle
+    cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
+    artifact-name: IO3_dongle-debug-nice_nano-zmk
+  - board: nice_nano
     shield: settings_reset
